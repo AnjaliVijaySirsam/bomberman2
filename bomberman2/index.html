@@ -1,0 +1,147 @@
+<!-- 
+  box - 10 x 10
+  number of bombs - 10
+  points on safe click - 10
+  win condition - 90 points or flag all the 10 bombs
+  lose condition - left - click on the bomb
+  right-click: (use onContextMenu method) show flag(!) whether bomb is there or not
+  left-click: (use OnClick method)
+      if bomb - lose the game
+      if safe - add 10 points and show the number of bombs in the
+                neighboring tiles
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="indexCss.css">
+    <script src="indexJavascript.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div
+          id="1"
+          class="valid"
+          onclick="handleOnClick()"
+          oncontextmenu="handleRightClick()"
+        ></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <div class="valid"></div>
+        <!-- <div></div> -->
+      </div>
+      <div><span id="flagsLeft"></span></div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
