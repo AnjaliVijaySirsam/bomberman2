@@ -11,137 +11,126 @@
                 neighboring tiles
  -->
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="indexCss.css">
-    <script src="indexJavascript.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
+<div class="container">
       <div class="grid">
         <div
-          id="1"
-          class="valid"
+          id="0"
+          class="valid" data="0"
           onclick="handleOnClick()"
           oncontextmenu="handleRightClick()"
         ></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="1" class="valid" data="0"></div>
+        <div id="2" class="valid" data="1"></div>
+        <div id="3" class="valid" data="1"></div>
+        <div id="4" class="valid" data="1"></div>
+        <div id="5" class="valid" data="1"></div>
+        <div id="6" class="bomb" data="1">6</div>
+        <div  id="7" class="valid" data="1"></div>
+        <div id="8" class="valid" data="0"></div>
+        <div id="9" class="valid" data="0"></div>
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+         <div id="10" class="valid" data="0"></div>
+          <div id="11" class="valid" data="0"></div>
+        <div id="12" class="valid" data="1"></div>
+        <div id="13" class="bomb" data="1">13</div>
+        <div id="14" class="valid" data="1"></div>
+        <div id="15" class="valid" data="1"></div>
+        <div id="16" class="valid" data="2"></div>
+        <div id="17" class="valid" data="2"></div>
+        <div id="18" class="valid" data="1"></div>
+        <div id="19" class="valid" data="0"></div>
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="20" class="valid" data="0"></div>
+        <div id="21" class="valid" data="0"></div>
+        <div id="22" class="valid" data="1"></div>
+        <div id="23" class="valid" data="1"></div>
+        <div id="24" class="valid" data="1"></div>
+        <div id="25" class="valid" data="0"></div>
+        <div  id="26" class="valid" data="1"></div>
+        <div id="27" class="bomb" data="1">27</div>
+        <div id="28" class="valid" data="2"></div>
+        <div id="29" class="valid" data="1"></div> 
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="30" class="valid" data="0"></div>
+         <div id="31" class="valid" data="0"></div>
+        <div id="32" class="valid" data="0"></div>
+        <div id="33" class="valid" data="1"></div>
+        <div id="34" class="valid" data="1"></div>
+        <div id="35" class="valid" data="1"></div>
+        <div id="36" class="valid" data="1"></div>
+        <div id="37" class="valid" data="1"></div>
+        <div id="38" class="valid" data="2"></div>
+        <div id="39" class="bomb" data="1">39</div>
+        <!-- <div></div> -->  
+        <div id="40" class="valid" data="0"></div>  
+        <div id="41" class="valid" data="0"></div>
+        <div id="42" class="valid" data="0"></div>
+        <div id="43" class="valid" data="1"></div>
+        <div id="44" class="bomb" data="1">44</div>
+        <div id="45" class="valid" data="2"></div>
+        <div id="46" class="valid" data="1"></div>
+        <div id="47" class="valid" data="1"></div>
+        <div id="48" class="valid" data="1"></div>
+        <div id="49" class="valid" data="1"></div>
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+       <div id="50" class="valid" data="1"></div>
+        <div id="51" class="valid" data="1"></div>
+        <div id="52" class="valid" data="0"></div>
+        <div id="53" class="valid" data="1"></div>
+        <div id="54" class="valid" data="1"></div>
+        <div id="55" class="valid" data="2"></div>
+        <div id="56" class="bomb" data="1">56</div>
+        <div id="57" class="valid" data="1"></div>
+        <div id="58" class="valid" data="0"></div>
+        <div id="59" class="valid" data="0"></div>
+        
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="60" class="bomb" data="1">60</div>
+        <div id="61" class="valid" data="1"></div>
+        <div id="62" class="valid" data="0"></div>
+        <div id="63" class="valid" data="1"></div>
+        <div id="64" class="valid" data="1"></div>
+        <div id="65" class="valid" data="2"></div>
+        <div id="66" class="valid" data="1"></div>
+        <div id="67" class="valid" data="1"></div>
+        <div id="68" class="valid" data="0"></div>
+        <div id="69" class="valid" data="0"></div>
+        
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="70" class="valid" data="1"></div>
+        <div id="71" class="valid" data="1"></div>
+        <div id="72" class="valid" data="0"></div>
+        <div id="73" class="valid" data="1"></div>
+        <div id="74" class="bomb" data="1">74</div>
+        <div id="75" class="valid" data="1"></div>
+        <div id="76" class="valid" data="0"></div>
+        <div id="77" class="valid" data="1"></div>
+        <div id="78" class="valid" data="1"></div>
+        <div id="79" class="valid" data="1"></div>
+        <!-- <div></div> --> 
+        <div id="80" class="valid" data="0"></div> 
+        <div id="81" class="valid" data="0"></div>
+        <div id="82" class="valid" data="0"></div>
+        <div id="83" class="valid" data="1"></div>
+        <div id="84" class="valid" data="1"></div>
+        <div id="85" class="valid" data="1"></div>
+        <div id="86" class="valid" data="0"></div>
+        <div id="87" class="valid" data="1"></div>
+        <div id="88" class="bomb" data="2">88</div>
+        <div id="89" class="valid" data="2"></div>
         <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <!-- <div></div> -->
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
-        <div class="valid"></div>
+        <div id="90" class="valid" data="0"></div>
+        <div id="91" class="valid" data="0"></div>
+        <div id="92" class="valid" data="0"></div>
+        <div id="93" class="valid" data="0"></div>
+        <div id="94" class="valid" data="0"></div>
+        <div id="95" class="valid" data="0"></div>
+        <div id="96" class="valid" data="0"></div>
+        <div id="97" class="valid" data="1"></div>
+        <div id="98" class="valid" data="2"></div>
+        <div id="99" class="bomb" data="2">99</div>
         <!-- <div></div> -->
       </div>
-      <div><span id="flagsLeft"></span></div>
+      <div>Flags left: <span id="flagsLeft"></span></div>
       <div id="result"></div>
     </div>
-  </body>
-</html>
